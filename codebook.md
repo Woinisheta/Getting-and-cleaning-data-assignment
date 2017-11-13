@@ -1,18 +1,17 @@
-
 This code book explains data named as secTidySet.txt file of this repository.
 
-The README.md file of this repository provides information abour data cleaning and background information about this data set.
+The README.md file of this repository provides information about data cleaning and background information about this data set.
 
-The structure of the data set is described in the Data section, its variables are listed in the Variables section, and the transformations that were carried out to obtain the data set based on the source data are presented in the Transformations section.
+Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. The data, the variables and information on how transformation undertaken to obtain a dataset is presented below. 
+
 Data
+It is a multivariate, time-series data with 10299 instances collected on 2012-12-10. The secTidySet.txt data file is a text file, containing space-separated values. The dataset end up with 82 variables.
 
-The secTidySet.txt data file is a text file, containing space-separated values.
-
-The first row contains the names of the variables, which are listed and described in the Variables section, and the following rows contain the values of these variables.
 Variables
 
 Each row contains, for a given subject and activity, 79 averaged signal measurements.
-Identifiers
+
+Identifiers:- there are two identifiers one is subjectID and activityID
 
     subject
 
@@ -196,4 +195,5 @@ The following transformations were applied to the source data:
         Acc, Gyro, Mag, Freq, mean, and std were replaced with Accelerometer, Gyroscope, Magnitude, Frequency, Mean, and StandardDeviation respectively.
         Replaced (supposedly incorrect as per source's features_info.txt file) BodyBody with Body.
     From the data set in step 4, the final data set was created with the average of each variable for each activity and each subject.
+
 
